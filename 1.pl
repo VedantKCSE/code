@@ -1,0 +1,9 @@
+parent(amol,anisha).
+parent(amol,raaj).
+parent(rajni,anisha).
+parent(rajni,raaj).
+parent(anisha,monu).
+parent(raaj,sonu).
+sibling(A,B):-parent(X,A),parent(X,B),A\=B.
+grandparent(A,B):-parent(A,X),parent(X,B),A\=B.
+%sibling(anisha,raaj).
